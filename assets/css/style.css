@@ -58,7 +58,6 @@ a:hover {
 		max-width: 1280px;
 	}
 }
-
 /*=================================================================
 				Start Main css
 =================================================================*/
@@ -103,6 +102,26 @@ a:hover {
 
 .menu ul li {
 	margin-right: 40px;
+	position: relative;
+	transition: 0.2s;
+}
+.menu ul ul{
+	position: absolute;
+	background: #FFF;
+	border-radius: 4px;
+	padding: 8px 5px;
+	display: none;
+	transition: 0.2s;
+}
+.menu ul > li:hover > ul{
+	display: flex;
+}
+.menu ul ul li{
+	margin-right: 0px;
+}
+.menu ul ul li a{
+	color: #000 !important;
+	padding: 0 15px;
 }
 
 .menu ul li:last-child {
@@ -861,4 +880,113 @@ button:hover {
 }
 .all_contact.right_contact_all {
 	padding-left: 47px;
+}
+
+.footer_area_design{
+	padding: 86px 0;
+	padding-bottom: 50px;
+	background-color: #1C1C1C;
+}
+.f_logo img {
+	width: 156px;
+}
+.f_logo {
+	margin-bottom: 37px;
+}
+.footer_link ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer_link ul li {
+	margin-right: 14px;
+}
+.footer_link ul li a{
+	width: 42px;
+	height: 42px;
+	border-radius: 50px;
+	color: #FFF;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: #000;
+	transition: 0.2s;
+}
+.footer_link ul li:hover{
+	opacity: 0.8;
+}
+.footer_menu_all{
+
+}
+.footer_single_link{
+	margin: 0 10px;
+}
+.footer_single_link h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	color: #FFF;
+	margin-bottom: 5px;
+	min-height: 69px;
+	line-height: 33px;
+}
+.footer_single_link ul{
+}
+.footer_single_link ul li{
+}
+.footer_single_link ul li a{
+	color: #9A9A9A;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	color: #FFF;
+	margin-bottom: 5px;
+	padding: 2px 0;
+	display: inline-block;
+	transition: 0.2s;
+
+}
+.footer_single_link ul li:hover a{
+	opacity: 0.8;
+}
+.footer_menu_all {
+	display: flex;
+	justify-content: space-around;
+}
+.footer_right .footer_single_link h3 {
+	margin-bottom: 10px;
+	min-height: auto;
+}
+.footer_single_link:last-child{
+	margin-bottom: 0;
+}
+.footer_partnar{
+	background: #FFF;
+	border-radius: 35px;
+	padding: 30px;
+}
+.footer_partnar img{
+	width: 100%;
+}
+.copyright{
+	padding-top: 50px;
+}
+.copyright  ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.copyright ul li{
+	padding-right: 60px;
+}
+.copyright ul li:last-child{
+	padding-right:0 ;
+}
+.copyright ul li a{
+	font-size: 16px;
+	color: var(--color6);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	transition: 0.2s;
+}
+.copyright ul li:hover a{
+	opacity: 0.7;
 }
