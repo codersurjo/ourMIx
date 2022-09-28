@@ -1,6 +1,14 @@
 $(document).ready(function(){
     $('select').niceSelect();
 
+    //menu 
+    $('.btn15').click(function(){
+      $('.menu > ul').slideToggle();
+    })
+    $('.menu').click (function(){
+      $(this).toggleClass('open');
+    });
+
     // Owl Carousel
     var hero_slider = $(".hero_slider");
     hero_slider.owlCarousel({
@@ -57,4 +65,43 @@ $(document).ready(function(){
          }
  
      });
+    
+
+    // checkbox js 
+    $('input[type=checkbox]').css('display','none');
+$('input[type=checkbox]').after('<div class="laces-checkbox"><i class="fa"></i></div>');
+$('input[type=checkbox]').each(function(){
+  if($(this).prop('checked') == true) {
+    $(this).find('~ .laces-checkbox .fa').addClass('fa-check');
+  }
+});
+
+$('input[type=checkbox]').on('change', function(){
+  if($(this).find('.fa').hasClass('fa-check')) {
+    $(this).prev('input[type=checkbox]').prop('checked', false);
+    $(this).find('.fa').removeClass('fa-check');
+  } else {
+    $(this).prev('input[type=checkbox]').prop('checked', true);
+    $(this).find('.fa').addClass('fa-check');
+  }
+});
+
+$('.laces-checkbox').on('click', function() {
+  if($(this).find('.fa').hasClass('fa-check')) {
+    $(this).prev('input[type=checkbox]').prop('checked', false);
+    $(this).find('.fa').removeClass('fa-check');
+  } else {
+    $(this).prev('input[type=checkbox]').prop('checked', true);
+    $(this).find('.fa').addClass('fa-check');
+  }
+});
+
+    //  stricky header 
+  //   $(window).scroll(function(){
+  //     if($(this).scrollTop() > 100){
+  //         $('.header_design').addClass('sticky')
+  //     } else{
+  //         $('.header_design').removeClass('sticky')
+  //     }
+  // });
 })

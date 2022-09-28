@@ -560,6 +560,11 @@ button {
 	z-index: 1;
 	padding-top: 45px;
 	padding-bottom: 162px;
+	overflow: hidden;
+}
+.hero_slider .owl-nav span {
+	font-size: 31px !important;
+	color: #000 !important;
 }
 
 .forebase_area:after {
@@ -606,8 +611,8 @@ button {
 	max-width: 204px;
 }
 
-.fore_bottom_logo:last-child a {
-	margin-left: 20px;
+.fore_bottom_logo:first-child a {
+	margin-left:0;
 }
 
 .fore_img {
@@ -990,3 +995,208 @@ button:hover {
 .copyright ul li:hover a{
 	opacity: 0.7;
 }
+
+/* Humberger css  */
+.btn15 {
+	height: 43px;
+	transition-duration: 0.5s;
+	padding-top: 18px;
+	margin-left: 10px;
+	cursor: pointer;
+	display: none;
+  }
+  .btn15 .icon {
+	transition-duration: 0.5s;
+	height: 2px;
+	width: 24px;
+	background-color: #FFF;
+	border-radius: 4px;
+	left: 15px;
+  }
+  .btn15 .icon:before {
+	transition-duration: 0.5s;
+	position: absolute;
+	width: 17px;
+	height: 2px;
+	background-color: #FFF;
+	content: "";
+	top: 12px;
+	border-radius: 4px;
+  }
+  .btn15 .icon:after {
+	transition-duration: 0.5s;
+	position: absolute;
+	width: 17px;
+	height: 2px;
+	background-color: #FFF;
+	content: "";
+	top: 27px;
+	border-radius: 4px;
+  }
+  .btn15.open .icon {
+	transition-duration: 0.5s;
+	background: transparent;
+  }
+  .btn15.open .icon:before {
+	transform: rotateZ(45deg) scaleX(1.25) translate(3.5px, 6.5px);
+  }
+  .btn15.open .icon:after {
+	transform: rotateZ(-45deg) scaleX(1.25) translate(3px, -6px);
+  }
+
+
+  
+/* End Humberger css  */
+
+
+/* Sign in page css  */
+.sign_in_section {
+	background: #49977D;
+	padding-top: 145px;
+	padding-bottom:357px;
+	position: relative;
+	z-index: 1;
+}
+.sign_in_section:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 265px;
+	bottom: -2px;
+	left: 0;
+	background: url(../images/home/path.png) no-repeat scroll 0 0 / 100% 100%;
+	z-index: 1;
+}
+.signinfull_area {
+	max-width: 662px;
+	margin: 0 auto;
+	width: 100%;
+}
+.signinfull_area h1{
+	font-size: 50px;
+	color: #FFF;
+	font-family: var(--bold);
+	font-weight: 700;
+	margin-bottom: 23px;
+}
+.sign_in_form {
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	border-radius: 40px;
+	opacity: 1;
+	padding: 22px;
+}
+.sign_in_form .nav-pills .nav-link{
+	box-shadow: inset 0px 5px 10px #00000029;
+	border-radius: 30px;
+	opacity: 1;
+	text-align: center;
+	font-size: 20px;
+	font-family: var(--bold);
+	font-weight: 700;
+	letter-spacing: 0px;
+	color: #000000;
+	text-transform: uppercase;
+	opacity: 1;
+	padding: 25px 10px;
+}
+.sign_in_form .nav-item {
+	max-width: 48%;
+}
+.sign_in_form .nav-pills {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px !important;
+}
+.sign_in_form .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	color: #fff;
+	background-color: #49977D;
+	color: #FFF !important;
+}
+.sign_in_form .form-control {
+	display: block;
+	width: 100%;
+	padding:13px;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #49977D;
+	border-radius: 6px;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	font-family:var(--regular);
+}
+.form-control:focus{
+	box-shadow: 0 !important;
+}
+.sign_in_form .btn-primary {
+	color: #fff;
+	background-color: #49977D;
+	border-color: #49977D;
+	padding: 11px;
+	max-width: 126px;
+	font-size: 15px;
+	font-weight: 500;
+	font-family: var(--medium);
+	height: 52px;
+}
+.group_flex{
+	display: flex;
+	justify-content: flex-end;
+}
+.checkbox {
+	max-width: 400px;
+	width: 100%;
+}
+.form-group.group_flex.group_flex_2 {
+	justify-content: space-between;
+}
+.checkbox label{
+	display: flex;
+	font-weight: 400;
+	font-family: var(--regular);
+	font-size: 15px;
+	letter-spacing: 0px;
+	color: #000000;
+}
+.checkbox label a{
+	text-decoration: underline;
+	color: #000;
+}
+.laces-checkbox {
+	display: inline-block;
+	width: 2rem;
+	max-width: 34px;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	text-align: center;
+	border: 1px solid #49977d;
+	border-radius: 0.3rem;
+	max-height: 34px;
+	flex: 0 0 59px;
+	margin-right: 14px;
+}
+  .checkbox .form-check {
+	position: relative;
+	display: block;
+	padding-left: 0;
+	display: flex;
+}
+.signup_header .button a,
+.partnar_header .button a {
+	background: #FFF;
+	color: #49977D;
+}
+/* End Sign in page css  */
+
+/* another pages   */
+.default_hero_bannar {
+	background: #F7B931;
+	padding-top: 146px;
+	padding-bottom: 108px;
+}
+.partnar_header {
+	background: #f7b931;
+	padding: 23px 0;
+}
+/* End another pages css  */
